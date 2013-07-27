@@ -76,11 +76,10 @@ class PlgSystemUserswitcher extends JPlugin
 	 */
 	public function onAfterInitialise()
 	{
-		// Initialiase variables.
+		// Get the application.
 		$app     = JFactory::getApplication();
-		$user    = JFactory::getUser();
-		$session = JFactory::getSession();
-		$db      = JFactory::getDbo();
+
+		// Get the input.
 		$su      = $app->input->getInt('su', 0);
 		$userId  = $app->input->getInt('uid', 0);
 
@@ -89,6 +88,11 @@ class PlgSystemUserswitcher extends JPlugin
 		{
 			return;
 		}
+
+		// Initialiase variables.
+		$user    = JFactory::getUser();
+		$session = JFactory::getSession();
+		$db      = JFactory::getDbo();
 
 		// Check the current session.
 		if (!$this->checkSession())
