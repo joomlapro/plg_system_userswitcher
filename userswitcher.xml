@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>plg_system_userswitcher</name>
+	<author>Bruno Batista</author>
+	<creationDate>Jul 2013</creationDate>
+	<copyright>Copyright (C) 2013 AtomTech, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>bruno@atomtech.com.br</authorEmail>
+	<authorUrl>http://www.atomtech.com.br</authorUrl>
+	<version>1.0</version>
+	<description>PLG_SYSTEM_USERSWITCHER_XML_DESCRIPTION</description>
+	<scriptfile />
+	<files>
+		<filename plugin="userswitcher">userswitcher.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_userswitcher.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_userswitcher.sys.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.plg_system_userswitcher.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.plg_system_userswitcher.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+		</fields>
+	</config>
+</extension>
